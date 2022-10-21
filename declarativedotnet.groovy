@@ -10,7 +10,7 @@ pipeline {
     stages {
       stage ('vcs') {
             steps {
-                git branch: "${params.branch}"
+                git branch: "${params.branch}",
                   url: 'https://github.com/anji1649github/dotnetcore-docs-hello-world.git'
             }
         }
